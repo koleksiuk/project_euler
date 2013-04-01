@@ -1,7 +1,7 @@
-nums = (100..999)
 a = Array.new
-nums.each { |n|
-  nums.each { |m|
+
+999.downto(100) { |n|
+  999.downto(n) { |m|
     num = m*n
     a << num if num.to_s == num.to_s.reverse  
   }
